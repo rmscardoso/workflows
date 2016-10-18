@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+POST    /workflows                                               controllers.WorkflowController.addWorkflow()
+
+POST    /workflows/:workflowId/executions                        controllers.WorkflowExecutionController.addWorkflowExecution(workflowId: Long)
+
+PUT     /workflows/:workflowId/executions/:workflowExecutionId   controllers.WorkflowExecutionController.decrementWorkflowExecution(workflowId: Long, workflowExecutionId: Long)
+
+GET     /workflows/:workflowId/executions/:workflowExecutionId   controllers.WorkflowExecutionController.isFinishedWorkflowExecution(workflowId: Long, workflowExecutionId: Long)

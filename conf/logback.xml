@@ -1,0 +1,5 @@
+<configuration>
+    <logger name="root" level="ERROR"/>
+    <logger name="play" level="INFO"/>
+    <logger name="application" level="DEBUG"/>
+</configuration>
